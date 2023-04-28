@@ -85,6 +85,10 @@ function BuildLInkButton(url, text) {
   button.innerHTML = text;
   button.classList.add("mdc-button");
   button.onclick = function(event) {
+    gtag('event', 'click', {
+      'event_category': 'link',
+      'event_label': url
+    });
     window.open(url, '_blank');
   }
   return button;
@@ -131,6 +135,9 @@ function addGift(elem, title, content) {
 		if (el.innerHTML == "expand_more") {
 			el.innerHTML = "expand_less";
 			el3.classList.remove("hiddenc");
+      gtag('event', 'gift_details_expanded', {
+        'event_category': 'coworker-newborn',
+      });
 		} else {
 			el.innerHTML = "expand_more";
 			el3.classList.add("hiddenc");
@@ -154,7 +161,12 @@ function culturepicked(v) {
 	chinacontent.classList.remove("hiddenc");
 	if (!v) {
 		v = "china";
-	}
+	} else {
+    gtag('event', 'culture_picked', {
+      'event_category': 'coworker-newborn',
+      'event_label': v
+    });
+  }
 	addGifts(chinacontent, v);
 	ddiv = document.getElementById('culturepickerdiv');
 	if (ddiv) {
@@ -203,4 +215,13 @@ function onloadf() {
   if(culture) {
     culturepicked(culture);
   }
+
+ document.querySelectorAll('.mdc-button').forEach(
+    function(ele) {
+        mdc.ripple.MDCRipple.attachTo(ele);
+    });
+}
+
+function gohome() {
+  window.location.href = "index.html";
 }

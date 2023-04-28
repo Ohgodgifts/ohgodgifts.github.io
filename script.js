@@ -9,6 +9,11 @@ function gotocommonscenarios() {
 function addScenarios() {
 	maindiv = document.getElementById("maincontent");
 	addScenario(maindiv, "Co-worker with new born", "coworker-newborn.html");
+
+ document.querySelectorAll('.mdc-button').forEach(
+    function(ele) {
+        mdc.ripple.MDCRipple.attachTo(ele);
+    });
 }
 
 function addScenario(parententry, scenariotext, scenariocontenturl) {
@@ -38,4 +43,9 @@ function culturepicked() {
 	if (ddiv) {
 		ddiv.style.display = "none";
 	}
+}
+
+
+function gohome() {
+  window.location.href = "index.html";
 }
