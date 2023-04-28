@@ -9,6 +9,7 @@ function gotocommonscenarios() {
 function addScenarios() {
 	maindiv = document.getElementById("maincontent");
 	addScenario(maindiv, "Co-worker with new born", "coworker-newborn.html");
+	addScenario(maindiv, "Grand kids", "grandkids.html");
 
  document.querySelectorAll('.mdc-button').forEach(
     function(ele) {
