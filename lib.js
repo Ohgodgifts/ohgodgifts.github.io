@@ -43,6 +43,23 @@ function createMDCSelectWithOptionsAndId(id, optionsarray) {
   return div;
 }
 
+function getAmazonResult(search_term) {
+  var div = document.createElement('div');
+
+  var elem = document.createElement('script');
+  elem.setAttribute('type', 'text/javascript');
+  elem.setAttribute('data-cfasync', 'false');
+  elem.innerHTML = 'amzn_assoc_placement = "adunit0"; amzn_assoc_tracking_id = "ohgodgifts-20"; amzn_assoc_ad_mode = "search"; amzn_assoc_ad_type = "smart"; amzn_assoc_marketplace = "amazon"; amzn_assoc_region = "US"; amzn_assoc_default_search_phrase = "'+search_term+'"; amzn_assoc_default_category = "All"; amzn_assoc_design = "in_content"';
+  div.appendChild(elem);
+
+  var elem2 = document.createElement('script');
+  elem2.setAttribute('data-cfasync', 'false');
+  elem2.setAttribute('src', 'https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US');
+  elem2.setAttribute('async', 'true');
+  div.appendChild(elem2);
+  return div;
+}
+
 function addGift(elem, title, content) {
   console.log("here");
 	var el = document.createElement("span");
@@ -81,6 +98,7 @@ function addGift(elem, title, content) {
 			el3.classList.add("hiddenc");
 		}
 	}
+  el3.appendChild(getAmazonResult(title));
 	ee = document.createElement("div");
 	ee.classList.add("topmargin");
 	ee.classList.add("container");

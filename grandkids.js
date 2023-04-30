@@ -226,4 +226,6 @@ function loadgrandkidspage() {
     addGifts(giftsdiv, agegifts[select.value]);
     giftsdiv.style.display = "block";
   });
+  document.getElementById("giftsdiv").style.display = "block";
+  addGifts(document.getElementById("giftsdiv"), agegifts[optionarray[0]]);
 }
