@@ -41,7 +41,24 @@
 	margin-right: 1em;
 	/*margin-bottom: 1em;*/
 }
+.cardscontainer {
+	width: 370;
+	background-color: #f2f2f2;
+}
 
 .floatright {
 	float: right;
 }
+
+.tablecard {
+	margin: 0 0 10px 10px;
+}
+
+.tablerow:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+

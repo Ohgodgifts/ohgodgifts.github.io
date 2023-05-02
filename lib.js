@@ -121,5 +121,53 @@ function addGifts(elem, datatofill) {
 	}
 }
 
+function giftCard(cardinfo) {
+	btn = document.createElement('button');
+	btn.classList.add("mdc-card");
+	btn.style.width = "170px";
+	btn.style.height = "230px";
+	btn.classList.add("scenariocard");
+	btn.onclick = function () {
+		window.location = cardinfo[2];
+	}
+
+	scenarioimage = document.createElement('img');
+	scenarioimage.classList.add('scenariocardimage');
+	scenarioimage.src = cardinfo[1];
+  scenarioimage.style.alignSelf = "center";
+  scenarioimage.style.width = "150px";
+	btn.appendChild(scenarioimage);
+
+	scenariocontent = document.createElement('div');
+	scenariocontent.classList.add('scenariocardcontent');
+	scenariocontent.innerHTML = cardinfo[0];
+  scenariocontent.height = '100%';
+	scenariocontent.style.alignSelf = "center";
+	btn.appendChild(scenariocontent);
+  return btn;
+}
+
+
+function renderCards(cards) {
+  var elem = document.createElement("div");
+  elem.classList.add("cardscontainer");
+  elem.style.alignSelf = "center";
+  elem.style.display = "flex";
+  for (var i = 0; i <= cards.length/2; i++) {
+    for (var j = 0; j < 2; j++) {
+      var ind = i * 2 + j;
+      if (ind >= cards.length) {
+        break;
+      }
+      var ec = document.createElement("div");
+      ec.appendChild(giftCard(cards[ind]));
+      ec.classList.add("tablecard");
+      elem.appendChild(ec);
+    }
+  }
+  return elem;
+}
+
+
 
 
