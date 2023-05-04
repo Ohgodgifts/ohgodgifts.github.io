@@ -1,1 +1,0 @@
-<a target="_blank" href="https://www.amazon.com/gp/search?ie=UTF8&tag=ohgodgifts-20&linkCode=ur2&linkId=57737cb810e3afdb361b1e4460d4f0d5&camp=1789&creative=9325&index=aps&keywords=red blanket">RedBlanketForBabies</a>

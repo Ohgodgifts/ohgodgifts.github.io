@@ -1,3 +1,9 @@
+:root {
+	--mdc-theme-primary: white;
+  --mdc-theme-secondary: #6200ee;
+	--mdc-theme-on-primary: black;
+}
+
 .fullwidth {
 	width: 100%;
 }
@@ -60,5 +66,13 @@
 	clear: both;
 }
 
+.mdc-title-text {
+	color: black;
+}
 
 
+
+.maincontent {
+	background-color: var(--mdc-theme-primary-bg, "black")
+	border-radius: 4px;
+}
