@@ -8,6 +8,7 @@ function gotocommonscenarios() {
 
 function addScenarios() {
 	maindiv = document.getElementById("maincontent");
+	console.log("here");
 	//addScenario(maindiv, "Co-worker with new born", "coworker-newborn.html");
 	//addScenario(maindiv, "Grand kids", "grandkids.html");
 	
@@ -15,7 +16,7 @@ function addScenarios() {
 		["Co-worker with new born", "imgs/parentssm.jpg", "coworker-newborn.html"],
 		["Grand kids", "imgs/grandkidsm.jpg", "grandkids.html"]]));
 
-ocument.querySelectorAll('.mdc-button').forEach(
+  document.querySelectorAll('.mdc-button').forEach(
     function(ele) {
         mdc.ripple.MDCRipple.attachTo(ele);
     });

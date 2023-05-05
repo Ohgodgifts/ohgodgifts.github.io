@@ -7,19 +7,18 @@ var agegifts = {
 };
 
 function loadgrandkidspage() {
-  var div = document.getElementById("agepickerdiv");
-  var optionarray = [];
+  var div = document.getElementById("ageoptions");
+
   for (var key in agegifts) {
-    optionarray.push(key);
+    var opt = document.createElement("a");
+    opt.classList.add("w3-bar-item");
+    opt.classList.add("w3-button");
+    opt.classList.add("w3-hover-light-grey");
+    opt.innerHTML = key;
+    opt.onclick = function() {
+      console.log("hi");
+      window.location.href = agegifts[this.innerHTML] + ".html";
+    }
+    div.appendChild(opt);
   }
-  div.appendChild(createMDCSelectWithOptionsAndId("grandkids-select", optionarray));
-  var select = new mdc.select.MDCSelect(document.getElementById("grandkids-select"));
-  select.listen("MDCSelect:change", function() {
-    gtag('event', 'grandkids_age_picked', {
-      'event_category': 'coworker-newborn',
-      'event_label': select.value
-    });
-    window.location.href = agegifts[optionarray[select.selectedIndex]] + ".html";
-  });
-  document.getElementById("giftsdiv").style.display = "block";
 }

@@ -1,52 +1,57 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2F5WSH1LNF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-2F5WSH1LNF');
-  </script>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/@material/menu-surface@7.0.0/dist/mdc.menu-surface.min.css">
-
-  <link rel="stylesheet" href="https://unpkg.com/@material/select@5.1.0/dist/mdc.select.min.css">
-  <script src="https://unpkg.com/@material/select@5.1.0/dist/mdc.select.min.js"></script>
-  <script src="https://unpkg.com/@material/menu-surface@7.0.0/dist/mdc.menu-surface.min.js"></script>
-
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-
-<script src="https://unpkg.com/@material/select@7.0.0/dist/mdc.select.min.js"></script>
-
-  <script src="script.js"></script>
-  <script src="coworker-newborn.js?1"></script>
-  <script src="lib.js?2"></script>
-  <script src="grandkids.js?1"></script>
-  <link href="style.css" rel="stylesheet">
+  <script src="script.js?9"></script>
+  <script src="lib.js?5"></script>
+  <link href="style.css?8" rel="stylesheet">
 </head>
-<body">
-	<header class="mdc-top-app-bar">
-  <div class="mdc-top-app-bar__row">
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-      <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
-        onclick="gohome();">home</button>`
-      <span class="mdc-top-app-bar__title mdc-title-text mdc-title-text mdc-title-text" onclick="gohome();">Gift Easy</span>
-    </section>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b>Gift Easy</b></h3>
   </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="grandkids.html" class="w3-bar-item w3-button">Grand Kids</a>
+    <a href="coworker-newborn.html" class="w3-bar-item w3-button">Parents</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide" onclick="gohome();">Gift Easy</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </header>
-<main class="mdc-top-app-bar--fixed-adjust">
-<div class="topmargin container mdc-card">
-		<h4>Board games and strategy games</h4>
-  <div>
-  	<div class="giftdetailstext">
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+	<div class="w3-container">
+  <div class="topmargin container w3-card">
+	<header class="w3-container">
+		<h3>Board games and strategy games</h3>
+	</header>
+  <div class="w3-container">
   		Board games and strategy games can help children develop critical thinking, problem-solving, and social skills.
-  	</div>
      <script type="text/javascript">
     amzn_assoc_placement = "adunit0";
     amzn_assoc_tracking_id = "ohgodgifts-20";
@@ -61,14 +66,16 @@
     </script>
     <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
       </div>
+  </div>
 </div>
 
-<div class="topmargin container mdc-card">
-		<h4>Art supplies</h4>
-  <div>
-  	<div class="giftdetailstext">
+<div class="w3-container">
+  <div class="topmargin container w3-card">
+	<header class="w3-container">
+		<h3>Art supplies</h3>
+	</header>
+  <div class="w3-container">
   		Art supplies like sketchbooks, pencils, markers, and paints can help children express their creativity and imagination.
-  	</div>
      <script type="text/javascript">
     amzn_assoc_placement = "adunit0";
     amzn_assoc_tracking_id = "ohgodgifts-20";
@@ -83,14 +90,16 @@
     </script>
     <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
       </div>
+  </div>
 </div>
 
-<div class="topmargin container mdc-card">
-		<h4>Books</h4>
-  <div>
-  	<div class="giftdetailstext">
+<div class="w3-container">
+  <div class="topmargin container w3-card">
+	<header class="w3-container">
+		<h3>Books</h3>
+	</header>
+  <div class="w3-container">
   		Books can help children expand their knowledge, vocabulary, and imagination, as well as develop their reading and comprehension skills.
-  	</div>
      <script type="text/javascript">
     amzn_assoc_placement = "adunit0";
     amzn_assoc_tracking_id = "ohgodgifts-20";
@@ -105,14 +114,16 @@
     </script>
     <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
       </div>
+  </div>
 </div>
 
-<div class="topmargin container mdc-card">
-		<h4>Science kits</h4>
-  <div>
-  	<div class="giftdetailstext">
+<div class="w3-container">
+  <div class="topmargin container w3-card">
+	<header class="w3-container">
+		<h3>Science kits</h3>
+	</header>
+  <div class="w3-container">
   		Science kits like chemistry sets, robotics kits, or telescope kits can help children learn about different scientific concepts and inspire their curiosity and creativity.
-  	</div>
      <script type="text/javascript">
     amzn_assoc_placement = "adunit0";
     amzn_assoc_tracking_id = "ohgodgifts-20";
@@ -127,14 +138,16 @@
     </script>
     <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
       </div>
+  </div>
 </div>
 
-<div class="topmargin container mdc-card">
-		<h4>Building sets</h4>
-  <div>
-  	<div class="giftdetailstext">
+<div class="w3-container">
+  <div class="topmargin container w3-card">
+	<header class="w3-container">
+		<h3>Building sets</h3>
+	</header>
+  <div class="w3-container">
   		Building sets like LEGO, model kits, or architecture kits can help children develop their spatial awareness, problem-solving, and creativity.
-  	</div>
      <script type="text/javascript">
     amzn_assoc_placement = "adunit0";
     amzn_assoc_tracking_id = "ohgodgifts-20";
@@ -149,14 +162,16 @@
     </script>
     <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
       </div>
+  </div>
 </div>
 
-<div class="topmargin container mdc-card">
-		<h4>Sports equipment</h4>
-  <div>
-  	<div class="giftdetailstext">
+<div class="w3-container">
+  <div class="topmargin container w3-card">
+	<header class="w3-container">
+		<h3>Sports equipment</h3>
+	</header>
+  <div class="w3-container">
   		Sports equipment like basketballs, footballs, or soccer balls can encourage physical activity and promote a healthy lifestyle.
-  	</div>
      <script type="text/javascript">
     amzn_assoc_placement = "adunit0";
     amzn_assoc_tracking_id = "ohgodgifts-20";
@@ -171,14 +186,16 @@
     </script>
     <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
       </div>
+  </div>
 </div>
 
-<div class="topmargin container mdc-card">
-		<h4>Musical instruments</h4>
-  <div>
-  	<div class="giftdetailstext">
+<div class="w3-container">
+  <div class="topmargin container w3-card">
+	<header class="w3-container">
+		<h3>Musical instruments</h3>
+	</header>
+  <div class="w3-container">
   		Musical instruments like guitars, keyboards, or drums can help children develop their sense of rhythm and melody, as well as boost their creativity and self-expression.
-  	</div>
      <script type="text/javascript">
     amzn_assoc_placement = "adunit0";
     amzn_assoc_tracking_id = "ohgodgifts-20";
@@ -193,14 +210,16 @@
     </script>
     <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
       </div>
+  </div>
 </div>
 
-<div class="topmargin container mdc-card">
-		<h4>Coding and technology tools</h4>
-  <div>
-  	<div class="giftdetailstext">
+<div class="w3-container">
+  <div class="topmargin container w3-card">
+	<header class="w3-container">
+		<h3>Coding and technology tools</h3>
+	</header>
+  <div class="w3-container">
   		Coding and technology tools like Raspberry Pi, Arduino, or Scratch can help children develop their computational thinking and problem-solving skills, as well as inspire their interest in technology and innovation.
-  	</div>
      <script type="text/javascript">
     amzn_assoc_placement = "adunit0";
     amzn_assoc_tracking_id = "ohgodgifts-20";
@@ -215,14 +234,16 @@
     </script>
     <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
       </div>
+  </div>
 </div>
 
-<div class="topmargin container mdc-card">
-		<h4>Camera and photography equipment</h4>
-  <div>
-  	<div class="giftdetailstext">
+<div class="w3-container">
+  <div class="topmargin container w3-card">
+	<header class="w3-container">
+		<h3>Camera and photography equipment</h3>
+	</header>
+  <div class="w3-container">
   		Camera and photography equipment like digital cameras or GoPro can help children capture their experiences and express their creativity through photography and videography.
-  	</div>
      <script type="text/javascript">
     amzn_assoc_placement = "adunit0";
     amzn_assoc_tracking_id = "ohgodgifts-20";
@@ -237,14 +258,16 @@
     </script>
     <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
       </div>
+  </div>
 </div>
 
-<div class="topmargin container mdc-card">
-		<h4>Outdoor adventure gear</h4>
-  <div>
-  	<div class="giftdetailstext">
+<div class="w3-container">
+  <div class="topmargin container w3-card">
+	<header class="w3-container">
+		<h3>Outdoor adventure gear</h3>
+	</header>
+  <div class="w3-container">
   		Outdoor adventure gear like camping equipment, hiking boots, or kayaks can encourage children to explore and appreciate the natural world around them while developing their physical and mental strength.
-  	</div>
      <script type="text/javascript">
     amzn_assoc_placement = "adunit0";
     amzn_assoc_tracking_id = "ohgodgifts-20";
@@ -259,9 +282,45 @@
     </script>
     <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
       </div>
+  </div>
 </div>
 
-</main>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("Demo");
+  if (x.className.indexOf("w3-show") == -1) { 
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+  <script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
 
-	</body>	
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
 </html>

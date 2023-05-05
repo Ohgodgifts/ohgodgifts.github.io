@@ -26,7 +26,9 @@ function createShoppingBar(title) {
 
 
 
-function culturepicked(v) {
+function culturepicked() {
+  var v = document.getElementById("culturepicker").value;
+  console.log(v);
 	if (!v) {
 		v = "china";
 	} else {
