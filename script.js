@@ -24,47 +24,6 @@ function addScenarios() {
 }
 
 
-function addScenario1(parententry, image, scenariotext, scenariocontenturl) {
-	btn = document.createElement('button');
-	btn.classList.add("mdc-card");
-	btn.style.width = "220px";
-	btn.classList.add("scenariocard");
-	btn.onclick = function () {
-		window.location = scenariocontenturl;
-	}
-
-	scenarioimage = document.createElement('img');
-	scenarioimage.classList.add('scenariocardimage');
-	scenarioimage.src = image;
-	btn.appendChild(scenarioimage);
-
-	scenariocontent = document.createElement('div');
-	scenariocontent.classList.add('scenariocardcontent');
-	scenariocontent.innerHTML = scenariotext;
-	scenariocontent.style.width = "100%";
-	scenariocontent.style.textAlign = "center";
-	btn.appendChild(scenariocontent);
-
-	parententry.appendChild(btn);
-}
-
-
-function addScenario(parententry, scenariotext, scenariocontenturl) {
-	btn = document.createElement('button');
-	btn.classList.add("mdc-card");
-	btn.classList.add("scenariocard");
-	btn.onclick = function () {
-		window.location = scenariocontenturl;
-	}
-
-	scenariocontent = document.createElement('div');
-	scenariocontent.classList.add('scenariocardcontent');
-	scenariocontent.innerHTML = scenariotext;
-	btn.appendChild(scenariocontent);
-
-	parententry.appendChild(btn);
-}
-
 function culturepicked() {
 	d = document.getElementById('culturepicker');
 	if (d.value == "china") {
