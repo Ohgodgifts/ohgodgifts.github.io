@@ -15,7 +15,9 @@ function addScenarios() {
 	maindiv.appendChild(renderCards([
 		["Co-worker with new born", "imgs/parentssm.jpg", "coworker-newborn.html"],
 		["Grand kids", "imgs/grandkidsm.jpg", "grandkids.html"],
-	  ["Mom", "imgs/momsm.jpg", "mom.html"]]));
+	  ["Mom", "imgs/momsm.jpg", "mom.html"],
+	  ["Girlfriend / Wife", "imgs/girlfriendsm.jpg", "girlfriend.html"]
+	]));
 
   document.querySelectorAll('.mdc-button').forEach(
     function(ele) {
